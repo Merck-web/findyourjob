@@ -1,31 +1,62 @@
-body{
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/* просто надо так */
+
+.header {
+    background-color: #E5E5E5;
+}
+
+body {
     margin: 0;
     font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
     font-size: 16 px;
     color: #111238;
 }
-.menu{
-    list-style: none; /* убираем точки у списка */
-    padding: 0; /* обнуляем отступы */
-    margin: 0; /* обнуляем отступы */
+
+.menu {
+    list-style: none;
+    /* убираем точки у списка */
+    padding: 0;
+    /* обнуляем отступы */
+    margin: 0;
+    /* обнуляем отступы */
 }
-.menu-item:not(:last-child){
-    margin-right: 20px; /* задаем отступы между словами кроме последнего элемента */
+
+.menu-item:not(:last-child) {
+    margin-right: 20px;
+    /* задаем отступы между словами кроме последнего элемента */
 }
-.menu-link{
+
+.menu-link {
     color: #111238;
-    text-decoration: none; /* tdn - убирает подчеркивания */ 
-}
-.button{
     text-decoration: none;
-    display: inline-block; /* для задавания отступов */ 
+    /* tdn - убирает подчеркивания */
 }
-.button-link{
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    /* для задавания отступов */
+    font-size: 16px;
+}
+
+.button-link {
     color: #111238;
     padding: 10px;
     margin-right: 20px;
 }
-.button-primary{
+
+.button-primary {
     background-color: #1A75E8;
     border-radius: 5px;
     padding-top: 15px;
@@ -33,4 +64,113 @@ body{
     padding-bottom: 15px;
     padding-left: 30px;
     color: white;
+    border: none;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+    margin-top: 43px;
+}
+
+.hero-text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    background-color: white;
+    border: 1px solid rgba(209, 209, 209, 0.1);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.tags-group {
+    padding-left: 15px;
+    color: #B2B2B2;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.tag {
+    color: #B2B2B2;
+    text-decoration: none;
+    padding: 5px 10px;
+    /* 5 сверху 10 по краям */
+    margin-left: 10px;
+    border: 1px solid #B2B2B2;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.input {
+    background-color: white;
+    border: none;
+    flex-grow: 1;
+    /* инпут займет све свободное место но не будет искажать кнопку */
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 15px;
+    /* Эти три строчки относятся к placeholder */
+}
+
+.input:focus {
+    outline: none;
+    /* выключаем обводку */
+}
+
+.button-icon {
+    vertical-align: middle;
+    /* вертикальное выравнивание по центру */
+    margin-right: 10px;
+}
+
+.button-text {
+    vertical-align: middle;
+}
+
+.card-icon {
+    max-width: 24px;
+    fill: #111238;
+    margin-bottom: 15px;
+    transition: fill 0.2s;
+}
+
+.card {
+    text-decoration: none;
+    color: #111238;
+    background: #F2F3F6;
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 30px;
+    padding: 35px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.card:hover {
+    background-color: #1A75E8;
+    color: white;
+    fill: white;
+}
+
+.card:hover .card-icon {
+    fill: white;
+}
+
+.section {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    margin-top: 0px;
 }

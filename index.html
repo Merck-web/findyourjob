@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class="header">
+    <header class="header pb-5">
         <div class="container">
-            <div class="row align-items-center py-3"> <!-- /p=padding y=ось -->
+            <div class="row align-items-center py-3">
+                <!-- /p=padding y=ось -->
                 <div class="col">
                     <a href="#!" class="logo-link">
                         <img src="img/svg/logo.svg" alt="1">
@@ -37,8 +40,106 @@
                 </div>
                 <!-- /.col -->
             </div>
+            <div class="row pt-5">
+                <div class="col-5">
+                    <h1 class="hero-title">Найдите удаленную работу вашей мечты</h1>
+                    <p class="hero-text">Создайте резюме или отправьте отклик на вакансию в компании с мировым именем и работайте по свободному графику</p>
+                    <div class="input-group d-flex">
+                        <input type="text" class="input" placeholder="Начните поиск">
+                        <button class="button-primary d-flex  justify-content-end">
+                            <img class="button-icon" src="/img/svg/search.svg" alt="1">
+                            <span class="button-text">Искать вакансию</span>
+                        </button>
+                    </div>
+                    <div class="tags-group">
+                        <span class="tags-label">Например:</span>
+                        <a href="#" class="tag">
+                            Front-end
+                        </a>
+                        <a href="#" class="tag">
+                            Back-end
+                        </a>
+                        <a href="#" class="tag">
+                            Designer
+                        </a>
+                    </div>
+                </div>
+                <!-- /.col-5 -->
+                <div class="col-6 offset-1">
+                    <img src="/img/svg/hero-image.svg" alt="1" class="hero-image">
+                </div>
+                <!-- /.col-6 offset-1 -->
+            </div>
+            <!-- .row>.col-5+.col-6.offset-1|c /.row -->
         </div>
-        <!-- /.container -->
+        <!-- /.container  -->
     </header>
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Категории</h2>
+            <div class="row ">
+                <div class="col-2">
+                    <a href="" class="card d-flex flex-column align-items-center">
+                        <svg height="24" class="card-icon">
+                            <use xlink:href="img/svg/icons.svg#brush"></use>
+                        </svg>
+                        <span class="card-text">
+                            Дизайн
+                        </span>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="" class="card d-flex flex-column align-items-center">
+                        <svg height="24" class="card-icon">
+                            <use xlink:href="img/svg/icons.svg#browser"></use>
+                        </svg>
+                        <span class="card-text">
+                            Разработка
+                        </span>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="" class="card d-flex flex-column align-items-center">
+                        <svg height="24" class="card-icon">
+                            <use xlink:href="img/svg/icons.svg#edit"></use>
+                        </svg>
+                        <span class="card-text">
+                            Копирайтинг
+                        </span>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="" class="card d-flex flex-column align-items-center">
+                        <svg height="24" class="card-icon">
+                            <use xlink:href="img/svg/icons.svg#fingerprint"></use>
+                        </svg>
+                        <span class="card-text">
+                            Безопасность
+                        </span>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="" class="card d-flex flex-column align-items-center">
+                        <svg height="24" class="card-icon">
+                            <use xlink:href="img/svg/icons.svg#camera"></use>
+                        </svg>
+                        <span class="card-text">
+                            Видео
+                        </span>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="" class="card d-flex flex-column align-items-center">
+                        <svg height="24" class="card-icon">
+                            <use xlink:href="img/svg/icons.svg#school"></use>
+                        </svg>
+                        <span class="card-text">
+                            Образование
+                        </span>
+                    </a>
+                </div>
+            </div>
+    </section>
 </body>
+
 </html>
