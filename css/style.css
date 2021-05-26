@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16 px;
+    color: #111238;
+}
+.menu{
+    list-style: none; /* убираем точки у списка */
+    padding: 0; /* обнуляем отступы */
+    margin: 0; /* обнуляем отступы */
+}
+.menu-item:not(:last-child){
+    margin-right: 20px; /* задаем отступы между словами кроме последнего элемента */
+}
+.menu-link{
+    color: #111238;
+    text-decoration: none; /* tdn - убирает подчеркивания */ 
+}
+.button{
+    text-decoration: none;
+    display: inline-block; /* для задавания отступов */ 
+}
+.button-link{
+    color: #111238;
+    padding: 10px;
+    margin-right: 20px;
+}
+.button-primary{
+    background-color: #1A75E8;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    color: white;
+}
